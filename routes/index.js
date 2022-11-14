@@ -24,7 +24,7 @@ router.get('/privoz', function(req, res, next) {
   });
 });
 
-/* Страница Джанкой */
+/* Страница Джанкой*/
 router.get('/dzhankoy', function(req, res, next) {
   res.render('samar', {
       title: "Джанкой",
