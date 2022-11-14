@@ -6,7 +6,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* Страница Карамельки */
+/* Страница Самарканд */
 router.get('/samarkand', function(req, res, next) {
   res.render('samar', {
       title: "Самарканд",
@@ -15,8 +15,7 @@ router.get('/samarkand', function(req, res, next) {
   });
 });
 
-
-/* Страница Карамельки */
+/* Страница Привоз */
 router.get('/privoz', function(req, res, next) {
   res.render('samar', {
       title: "Привоз",
@@ -25,7 +24,7 @@ router.get('/privoz', function(req, res, next) {
   });
 });
 
-/* Страница Карамельки */
+/* Страница Джанкой */
 router.get('/dzhankoy', function(req, res, next) {
   res.render('samar', {
       title: "Джанкой",
