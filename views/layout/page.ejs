@@ -14,15 +14,13 @@
         <li class="nav-item">
           <a class="nav-link" href="/">Главная</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/cit/samarkand">Самарканд</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/cit/privoz">Привоз</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/cit/dzhankoy">Джанкой</a>
-        </li>
+        <% menu.forEach(function(planet){ %>
+          <li class="nav-item">
+            <a class="nav-link" href="/cit/<%=city.nick%>">
+              <%=planet.title%>
+            </a>
+          </li>
+        <% }) %>
       </ul>
       <ul class="navbar-nav navbar-right">
         <li>
