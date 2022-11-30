@@ -1,12 +1,12 @@
 var express = require('express');
 var router = express.Router();
-
-/* GET home page. */
+/*
+/* GET home page. 
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-/* Страница Самарканд */
+/* Страница Самарканд 
 router.get('/samarkand', function(req, res, next) {
   res.render('samar', {
       title: "Самарканд",
@@ -14,8 +14,7 @@ router.get('/samarkand', function(req, res, next) {
       desc: "Тот самый город, в котором мечтает побывать каждый"
   });
 });
-
-/* Страница Привоз */
+/* Страница Привоз 
 router.get('/privoz', function(req, res, next) {
   res.render('samar', {
       title: "Привоз",
@@ -24,7 +23,7 @@ router.get('/privoz', function(req, res, next) {
   });
 });
 
-/* Страница Джанкой*/
+/* Страница Джанкой
 router.get('/dzhankoy', function(req, res, next) {
   res.render('samar', {
       title: "Джанкой",
@@ -32,6 +31,6 @@ router.get('/dzhankoy', function(req, res, next) {
       desc: "Тот самый город, в котором мечтает побывать каждый, потому что это крымский Самарканд"
   });
 });
-
+*/
 module.exports = router;
 

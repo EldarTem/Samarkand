@@ -15,9 +15,7 @@ router.get('/:nick', function(req, res, next) {
           res.render('samarkand', {
               title: city.title,
               picture: city.avatar,
-              desc1: city.desc1,
-              desc2: city.desc2,
-              desc3: city.desc3
+              desc: city.desc,
           })
       })
   })
