@@ -14,13 +14,13 @@
         <li class="nav-item">
           <a class="nav-link" href="/">Главная</a>
         </li>
-        <% menu.forEach(function(planet){ %>
+        <% if(typeof nav=='object' && nav){ nav.forEach(function(City){ %>
           <li class="nav-item">
-            <a class="nav-link" href="/cit/<%=city.nick%>">
-              <%=planet.title%>
+            <a class="nav-link" href="/citys/<%=City.nick%>">
+              <%=City.title%>
             </a>
           </li>
-        <% }) %>
+          <% })} %>
       </ul>
       <ul class="navbar-nav navbar-right">
         <li>
