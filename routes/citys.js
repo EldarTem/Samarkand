@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 });
 
 /* Страница городов*/
-router.get('/:nick', function(req, res, next) {
+router.get('/:nick', checkAuth,function(req, res, next) {
     City.findOne({nick:req.params.nick}, function(err, city){
           if(err) return next(err)
           if(!city) return next(new Error("Нет такого города"))
