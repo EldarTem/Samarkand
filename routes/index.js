@@ -8,7 +8,7 @@ router.get('/', function(req, res, next) {
 
 /* Страница Самарканд */
 router.get('/samarkand', function(req, res, next) {
-  res.render('samar', {
+  res.render('city', {
       title: "Самарканд",
       picture: "images/samarkand.jpg",
       desc: "Тот самый город, в котором мечтает побывать каждый"
@@ -17,7 +17,7 @@ router.get('/samarkand', function(req, res, next) {
 
 /* Страница Привоз */
 router.get('/privoz', function(req, res, next) {
-  res.render('samar', {
+  res.render('city', {
       title: "Привоз",
       picture: "images/privoz.jpg",
       desc: "Тот самое место, в котором мечтает побывать каждый, потому что в нем частичка Самарканда"
@@ -26,7 +26,7 @@ router.get('/privoz', function(req, res, next) {
 
 /* Страница Джанкой*/
 router.get('/dzhankoy', function(req, res, next) {
-  res.render('samar', {
+  res.render('city', {
       title: "Джанкой",
       picture: "images/dzhankoy.jpg",
       desc: "Тот самый город, в котором мечтает побывать каждый, потому что это крымский Самарканд"

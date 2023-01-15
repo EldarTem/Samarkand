@@ -1,9 +1,10 @@
 var mongoose = require('mongoose')
+mongoose.set('strictQuery', true);
 mongoose.connect('mongodb://127.0.0.1:27017/test1')
 
-var city = require("./models/sam").city
+var Сity = require("./models/sam").Сity
 
-var city = new city({
+var city = new Сity({
 title: "Самарканд",
 nick: "Samarkand"
 })
