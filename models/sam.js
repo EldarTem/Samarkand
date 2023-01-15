@@ -16,4 +16,4 @@ type:Date,
 default:Date.now
 }
 })
-module.exports.city = mongoose.model("city", citySchema)
+module.exports.City = mongoose.model("City", citySchema)
