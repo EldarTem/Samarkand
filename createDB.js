@@ -1,6 +1,6 @@
 var MongoClient = require('mongodb').MongoClient
 
-const uri = "mongodb://localhost:27017"
+const uri = "mongodb://127.0.0.1:27017/"
 const client = new MongoClient(uri)
 async function run() {
 try {
